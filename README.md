@@ -11,6 +11,7 @@ How to Run the Game
 2. Open index.html in any web browser
 
 Link to GitHub Pages
+https://github.com/IanPaje30/DC_101_Matching-Type_Paje-Ian-Joshua
 
 
 
