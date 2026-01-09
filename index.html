@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Matchy Matchy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <!-- Baloo 2 font for bubble letters -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MAIN MENU -->
+<div id="menu" class="screen active">
+  <h1 id="gameTitle">Matchy Matchy</h1>
+  <button id="playBtn" onclick="showDifficulty()">PLAY</button>
+
+  <div id="difficulty">
+    <button onclick="startGame('easy')">Easy</button>
+    <button onclick="startGame('medium')">Medium</button>
+    <button onclick="startGame('hard')">Hard</button>
+  </div>
+
+  <p class="highscore">High Score: <span id="menuHigh">0</span></p>
+</div>
+
+<!-- GAME SCREEN -->
+<div id="game" class="screen">
+  <div class="top-bar">
+    <span>⏱ <span id="timer">0</span></span>
+    <span>Level <span id="level">1</span> / 100</span>
+  </div>
+
+  <div class="board" id="topBoard"></div>
+  <div class="board" id="bottomBoard"></div>
+</div>
+
+<!-- GAME OVER SCREEN -->
+<div id="gameOver" class="screen">
+  <h1>GAME OVER🫵🏻😝</h1>
+  <p>Level Reached: <span id="finalLevel"></span></p>
+  <button onclick="playAgain()">Play Again</button>
+  <button onclick="quitGame()">Quit</button>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
